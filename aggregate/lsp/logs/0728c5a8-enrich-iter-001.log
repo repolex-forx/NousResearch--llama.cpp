@@ -1,0 +1,41 @@
+[2026-04-15T17:51:11Z] === ENRICH ITERATION 1 START | repo=NousResearch/llama.cpp sha=0728c5a8 ===
+[2026-04-15T17:51:11Z] [iter=1] PHASE START: enrich repo=NousResearch/llama.cpp sha=0728c5a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0728c5a8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0728c5a8b9569183ffca0399caac099afef87595.nq.gz
+[2026-04-15T17:51:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-15T17:51:41Z] [iter=1] AST store loaded triples=3322518 load_secs=27 mem_mb=936 MB
+[2026-04-15T17:51:41Z] [iter=1] Step 2: Finding LSP targets mem_mb=936 MB
+[2026-04-15T17:51:44Z] [iter=1] LSP targets found call_sites=21517 imports=158 extends=58 implements=0 secs=3
+[2026-04-15T17:51:46Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=936 MB
+[2026-04-15T17:52:03Z] [iter=1] Position index built positions=199465 nodes_with_types=240728 secs=17 mem_mb=936 MB
+[2026-04-15T17:52:03Z] [iter=1] Step 3: Starting LSP resolution mem_mb=936 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T17:52:03Z] [iter=1] Resolving target type target_type=call_site count=21517
+[2026-04-15T17:52:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=ggml.c
+[2026-04-15T18:40:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=1 resolved=573 errors=2200 current=examples/server/json.hpp
+[2026-04-15T20:12:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.7 files_done=2 resolved=1084 errors=6416 current=tests/test-grad0.c
+[2026-04-15T20:21:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.6 files_done=3 resolved=1112 errors=6826 current=examples/server/httplib.h
+[2026-04-15T20:49:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=178.1 files_done=4 resolved=1557 errors=8091 current=k_quants.c
+[2026-04-15T20:54:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.4 files_done=5 resolved=2827 errors=8327 current=examples/train-text-from-scratch/train-text-from-scratch.cpp
+[2026-04-15T21:08:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=197.3 files_done=6 resolved=3011 errors=8965 current=ggml-opencl.cpp
+[2026-04-15T21:12:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=201.0 files_done=7 resolved=3045 errors=9134 current=llama.cpp
+[2026-04-15T21:31:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.0 files_done=8 resolved=3292 errors=10010 current=examples/server/server.cpp
+[2026-04-15T21:33:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.7 files_done=9 resolved=3367 errors=10132 current=tests/test-tokenizer-0.cpp
+[2026-04-15T21:36:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.0 files_done=11 resolved=3423 errors=10238 current=examples/embedding/embedding.cpp
+[2026-04-15T21:38:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=226.9 files_done=13 resolved=3602 errors=10322 current=tests/test-sampling.cpp
+[2026-04-15T21:38:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=227.7 files_done=14 resolved=3627 errors=10361 current=examples/quantize-stats/quantize-stats.cpp
+[2026-04-15T21:39:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.6 files_done=15 resolved=3679 errors=10399 current=examples/quantize/quantize.cpp
+[2026-04-15T21:41:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=229.9 files_done=17 resolved=3733 errors=10459 current=examples/main/main.cpp
+[2026-04-15T21:42:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.2 files_done=18 resolved=3808 errors=10517 current=tests/test-quantize-fns.cpp
+[2026-04-15T21:42:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.7 files_done=19 resolved=3816 errors=10540 current=examples/save-load-state/save-load-state.cpp
+[2026-04-15T21:43:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=232.6 files_done=21 resolved=3880 errors=10583 current=tests/test-opt.c
+[2026-04-15T21:44:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.2 files_done=22 resolved=3887 errors=10608 current=examples/perplexity/perplexity.cpp
+[2026-04-15T21:45:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.9 files_done=24 resolved=3929 errors=10638 current=pocs/vdot/vdot.cpp
+[2026-04-15T21:45:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=234.6 files_done=25 resolved=3958 errors=10672 current=examples/benchmark/benchmark-matmult.cpp
+[2026-04-15T21:46:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=235.3 files_done=27 resolved=4007 errors=10704 current=ggml-alloc.c
+[2026-04-15T21:47:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.6 files_done=28 resolved=4018 errors=10763 current=llama-util.h
+[2026-04-15T21:48:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=237.2 files_done=29 resolved=4079 errors=10788 current=examples/embd-input/embd-input-lib.cpp
+[2026-04-15T21:48:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=237.7 files_done=34 resolved=4119 errors=10811 current=examples/common.h
+[2026-04-15T21:50:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.0 files_done=36 resolved=4155 errors=10869 current=examples/embd-input/panda_gpt.py
+[2026-04-15T21:50:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.6 files_done=37 resolved=4164 errors=10894 current=convert.py
+[2026-04-15T21:51:14Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=37 new_files_this_iter=37 mem_mb=936 MB
+[2026-04-15T21:51:14Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0728c5a8b9569183ffca0399caac099afef87595.nq.gz triples=78055
+[2026-04-15T21:51:16Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-15T21:51:16Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14404 elapsed_min=240.1 files_completed=37
