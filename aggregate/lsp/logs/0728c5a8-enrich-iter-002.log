@@ -1,0 +1,28 @@
+[2026-04-15T21:56:02Z] === ENRICH ITERATION 2 START | repo=NousResearch/llama.cpp sha=0728c5a8 ===
+[2026-04-15T21:56:02Z] [iter=2] PHASE START: enrich repo=NousResearch/llama.cpp sha=0728c5a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0728c5a8-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0728c5a8b9569183ffca0399caac099afef87595.nq.gz
+[2026-04-15T21:56:03Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-15T21:56:32Z] [iter=2] AST store loaded triples=3322518 load_secs=28 mem_mb=911 MB
+[2026-04-15T21:56:32Z] [iter=2] Step 2: Finding LSP targets mem_mb=911 MB
+[2026-04-15T21:56:36Z] [iter=2] LSP targets found call_sites=21517 imports=158 extends=58 implements=0 secs=3
+[2026-04-15T21:56:39Z] [iter=2] Loaded checkpoint partial graph triples=78055
+[2026-04-15T21:56:41Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=911 MB
+[2026-04-15T21:56:58Z] [iter=2] Position index built positions=199465 nodes_with_types=240728 secs=17 mem_mb=911 MB
+[2026-04-15T21:56:58Z] [iter=2] Step 3: Starting LSP resolution mem_mb=911 MB already_completed_types=[] already_completed_files=37
+[2026-04-15T21:56:58Z] [iter=2] Resolving target type target_type=call_site count=21517
+[2026-04-15T21:57:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=0 resolved=0 errors=0 current=convert.py
+[2026-04-15T22:03:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=1 resolved=177 errors=282 current=examples/embd-input/minigpt4.py
+[2026-04-15T22:03:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=2 resolved=197 errors=317 current=scripts/verify-checksum-models.py
+[2026-04-15T22:06:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=5 resolved=244 errors=357 current=examples/jeopardy/graph.py
+[2026-04-15T22:07:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=7 resolved=295 errors=394 current=examples/embd-input/embd_input.py
+[2026-04-15T22:07:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=8 resolved=307 errors=418 current=convert-pth-to-ggml.py
+[2026-04-15T22:14:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=10 resolved=322 errors=741 current=examples/server/public/completion.js
+[2026-04-15T22:15:19Z] [iter=2] Target type resolved target_type=call_site resolved=333 errors=22288 secs=1101 mem_mb=911 MB
+[2026-04-15T22:15:19Z] [iter=2] Resolving target type target_type=import_statement count=158
+[2026-04-15T22:15:19Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=19.3 files_done=0 resolved=0 errors=0 current=spm-headers/llama.h
+[2026-04-15T22:15:27Z] [iter=2] Target type resolved target_type=import_statement resolved=66 errors=158 secs=8 mem_mb=911 MB
+[2026-04-15T22:15:27Z] [iter=2] Resolving target type target_type=extends_clause count=58
+[2026-04-15T22:15:28Z] [iter=2] Target type resolved target_type=extends_clause resolved=4 errors=0 secs=2 mem_mb=911 MB
+[2026-04-15T22:15:54Z] [iter=2] Step 5: Writing final enrichment file triples=105187
+[2026-04-15T22:15:56Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0728c5a8b9569183ffca0399caac099afef87595.nq.gz size_kb=1942
+[2026-04-15T22:15:56Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-15T22:15:56Z] [iter=2] PHASE END: enrich elapsed_s=1194 elapsed_min=19.9 total_triples=105187
